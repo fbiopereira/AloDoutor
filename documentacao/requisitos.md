@@ -28,6 +28,10 @@ O time de desenvolvimento conversou com o responsável pela clínica, uma pessoa
 
 ![Marcação de Consulta](./imagens/04-MarcacaoConsulta.png)
 
+![Consulta - Preparação](./imagens/05-ConsultaPreparacao.png)
+
+![Consulta - Finalização](./imagens/06-ConsultaFinalizacao.png)
+
 
 #### Domínios e Contextos Delimitados Identificados
 
@@ -45,6 +49,7 @@ TODO - Incluir imagem com os relacionamentos entre os contextos delimitados
 - Cadastro de Médico 
     - O médico não pode ser cadastrado sem nome, CRM, especialidade e turno de atendimento
     - Não pode haver dois médicos com o mesmo CRM
+    - O proprio medico pode se cadastrar porém o RH precisa validar o seu registro
     - O médico só pode alterar o seu horário de atentimento do dia 01 ao dia 15 e a alteração só é válida para a agenda do mês seguinte
     - O próprio médico pode se tornar indisponível para atendimento. Essa alteração só pode ser feita de 01 a 15 do mês e só é válida para a agenda do mês seguinte
 
@@ -62,9 +67,32 @@ TODO - Incluir imagem com os relacionamentos entre os contextos delimitados
     - A agenda só pode ser gerada para o mês seguinte para médicos ativos
     - As consultas tem 30min de duração
 
+<br>
 
 - Marcação de Consultas
     - O Paciente pode marcar consulta desde que existam horários livres para o médico desejado
     - O Paciente não pode marcar duas consultas no mesmo dia e horário
     - A consulta pode ser cancelada pela Secretária ou pelo Paciente
     - A secretária também pode marcar consultas para os Pacientes
+
+<br>
+
+- Controle de Acesso
+    - A administração da Clínica quer que o sistema tenha controle de acesso para os usuários com os seguintes perfis:
+        - Médico
+            - Só pode se cadastrar e alterar seus horários de atendimento
+        - Secretária
+            - Pode marcar e cancelar consultas
+            - Pode gerar a agenda
+            - Aprova cadastro de Pacientes
+        - RH
+            - Aprova cadastro de Médicos            
+        - Paciente
+            - Pode marcar e cancelar consultas
+            - Pode se cadastrar no sistema
+        - Enfermagem
+            - Lista as consultas de um dia e turno específico
+            - Registra comparecimento ou falta do paciente
+        - Administração
+            - Tem permissão total no sistema
+

@@ -1,0 +1,69 @@
+<mxfile host="Electron" modified="2023-10-12T12:07:31.258Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="j8qja4yhgxcSacKs7MFd" version="22.0.2" type="device" pages="2">
+  <diagram name="DOMINIOS" id="WZtZchT8NtpQwqVBPbh9">
+    <mxGraphModel dx="1591" dy="1427" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-19" value="DOMÍNIO ALO DOUTOR - CONSULTAS MÉDICAS" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="50" y="70" width="690" height="890" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-14" value="OBJETOS DE VALOR" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+          <mxGeometry x="170" y="590" width="220" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-12" value="SUBDOMÍNIOS SUPORTE" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="400" y="130" width="220" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-11" value="SUBDOMÍNIOS PRINCIPAIS" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="170" y="130" width="220" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-1" value="MÉDICO" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-2" value="PACIENTE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-3" value="RH" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-4" value="RECEPCIONISTA" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-5" value="ENFERMAGEM" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-6" value="ADMINISTRADOR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-7" value="AGENDA MÉDICO" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-8" value="CONSULTA" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-9" value="PRONTUÁRIO MÉDICO DO PACIENTE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-15" value="SUBDOMÍNIO GENÉRICO" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="400" y="590" width="220" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-16" value="AUTENTICADOR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-17" value="AUTORIZADOR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="705" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8HDtmW_I1IsD4asgzvK4-18" value="USUARIO" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="bDF0ETqcjMSj1T153W36" name="CONTEXTOS DELIMITADOS">
+    <mxGraphModel dx="1114" dy="999" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
