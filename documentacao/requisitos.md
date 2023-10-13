@@ -41,9 +41,9 @@ O time de desenvolvimento conversou com o responsável pela clínica, uma pessoa
 
 
 
-#### Relacionamento entre Contextos Delimitados
+#### Contextos Delimitados
 
-TODO - Incluir imagem com os relacionamentos entre os contextos delimitados
+![Mapa de Contextos Delimitados](./imagens/mapaContextos.png)
 
 
 ### Critérios de Aceite
