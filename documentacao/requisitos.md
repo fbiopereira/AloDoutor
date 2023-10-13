@@ -35,7 +35,9 @@ O time de desenvolvimento conversou com o responsável pela clínica, uma pessoa
 
 #### Domínios e Contextos Delimitados Identificados
 
-TODO - Incluir imagem com os contextos delimitados
+##### Domínios
+
+![Domínios Identificados](./imagens/dominiosAloDoutor.png)
 
 
 
@@ -52,6 +54,7 @@ TODO - Incluir imagem com os relacionamentos entre os contextos delimitados
     - O proprio medico pode se cadastrar porém o RH precisa validar o seu registro
     - O médico só pode alterar o seu horário de atentimento do dia 01 ao dia 15 e a alteração só é válida para a agenda do mês seguinte
     - O próprio médico pode se tornar indisponível para atendimento. Essa alteração só pode ser feita de 01 a 15 do mês e só é válida para a agenda do mês seguinte
+    - O médico só pode estar cadastrado com uma especialidade, porém ela deve ser escolhida de uma lista de especialidades pré-cadastradas
 
 </br>
 
@@ -59,6 +62,7 @@ TODO - Incluir imagem com os relacionamentos entre os contextos delimitados
     - O Paciente não pode ser cadastrado sem nome, CPF, data de nascimento e telefone
     - Não pode haver dois pacientes com o mesmo CPF
     - O próprio paciente pode se cadastrar no sistema porém algum recepcionista precisa validar o cadastro
+    - O Prontuário Médico do Paciente deve receber um número único após a aprovação do cadastro do paciente.
     
 <br>
 
@@ -75,12 +79,20 @@ TODO - Incluir imagem com os relacionamentos entre os contextos delimitados
     - A consulta pode ser cancelada pela Secretária ou pelo Paciente
     - A secretária também pode marcar consultas para os Pacientes
 
+
+- Execução da Consulta
+    - O médico deve registrar a consulta no prontuário digital do paciente.
+    - Ele deve informar resultados de exames e anamnese do Paciente
+    - Ele só pode alterar pacientes que tenham consulta agendada naquele dia
+
 <br>
 
 - Controle de Acesso
     - A administração da Clínica quer que o sistema tenha controle de acesso para os usuários com os seguintes perfis:
         - Médico
-            - Só pode se cadastrar e alterar seus horários de atendimento
+            - Pode se cadastrar e alterar seus horários de atendimento
+            - Pode registrar os dados da consulta do paciente
+            - Pode ver o histórico de consultas do paciente
         - Secretária
             - Pode marcar e cancelar consultas
             - Pode gerar a agenda
@@ -91,8 +103,7 @@ TODO - Incluir imagem com os relacionamentos entre os contextos delimitados
             - Pode marcar e cancelar consultas
             - Pode se cadastrar no sistema
         - Enfermagem
-            - Lista as consultas de um dia e turno específico
-            - Registra comparecimento ou falta do paciente
+            - Lista as consultas de um dia e turno específico            
         - Administração
             - Tem permissão total no sistema
 
