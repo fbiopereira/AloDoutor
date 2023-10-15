@@ -402,3 +402,5 @@ FodyWeavers.xsd
 *.bkp
 
 *.dtmp
+
+.idea
