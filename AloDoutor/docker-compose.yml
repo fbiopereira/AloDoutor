@@ -1,0 +1,45 @@
+version: "3.7"
+
+services:
+  sql-server:
+    container_name: sql-server
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: always
+    ports:
+      - "1433:1433"
+    environment:
+        MSSQL_SA_PASSWORD: "P@ssw0rd"
+        ACCEPT_EULA: "Y"
+        MSSQL_PID: "Developer"
+    networks:
+      - "alo-doutor-net"
+        
+  sql-server-scripts:
+    image: mcr.microsoft.com/mssql-tools
+    depends_on:
+      - sql-server
+    command: /bin/bash -c 'until /opt/mssql-tools/bin/sqlcmd -S sql-server -U sa -P "P@ssw0rd" -Q "create database Keycloak"; do sleep 5; done'
+    networks:
+      - "alo-doutor-net"
+  
+  keycloak:
+    container_name: keycloak
+    image: quay.io/keycloak/keycloak:22.0.4
+    restart: always
+    ports:
+      - "9090:8080"
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      KC_DB: mssql      
+      KC_DB_URL: jdbc:sqlserver://sql-server:1433;encrypt=true;databaseName=Keycloak;user=sa;password=P@ssw0rd;trustServerCertificate=true;loginTimeout=30   
+    command: start-dev   
+    depends_on:
+        - sql-server
+        - sql-server-scripts
+    networks:
+      - "alo-doutor-net"
+  
+networks:
+  alo-doutor-net:
+    driver: bridge
