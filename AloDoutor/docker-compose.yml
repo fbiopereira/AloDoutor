@@ -31,8 +31,8 @@ services:
     environment:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
-      KC_DB: mssql      
-      KC_DB_URL: jdbc:sqlserver://sql-server:1433;encrypt=true;databaseName=Keycloak;user=sa;password=P@ssw0rd;trustServerCertificate=true;loginTimeout=30   
+      #KC_DB: mssql      
+      #KC_DB_URL: jdbc:sqlserver://sql-server:1433;encrypt=true;databaseName=Keycloak;user=sa;password=P@ssw0rd;trustServerCertificate=true;loginTimeout=30   
     command: start-dev   
     depends_on:
         - sql-server
