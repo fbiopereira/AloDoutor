@@ -3,7 +3,7 @@ using Keycloak.AuthServices.Authorization;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var configuration = builder.Configuration;
 // Add services to the container.
 
 var authenticationOptions = builder
@@ -23,6 +23,7 @@ builder.Services.AddKeycloakAuthorization(authorizationOptions);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddKeycloakAuthentication(configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
